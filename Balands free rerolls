@@ -2957,9 +2957,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_ProjectileSpeed/StatusEffect_All_SkillEnd_ProjectileSpeed.StatusEffect_All_SkillEnd_ProjectileSpeed,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_ProjectileSpeed/UIStat_All_SkillEnd_ProjectileSpeed.UIStat_All_SkillEnd_ProjectileSpeed,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Projectile Speed is increased by 200% for a short time.[/endgame]
 
-# Badass/Boss Damage - Reduce Damage Bonus to 50% from 75%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_UniqueEnemyDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.5
-
 # Action Skill Cooldown - Reduce Cooldown Bonus to 25% from 50%, increase Duration to 60 seconds, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_CooldownRate,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.30
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_CooldownRate,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,60
@@ -2988,12 +2985,12 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 # Critical Damage - make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_CritDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CritDamage/StatusEffect_All_SkillEnd_CritDamage.StatusEffect_All_SkillEnd_CritDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CritDamage/UIStat_All_SkillEnd_CritDamage.UIStat_All_SkillEnd_CritDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Critical Damage is increased by 30% for 15 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CritDamage/UIStat_All_SkillEnd_CritDamage.UIStat_All_SkillEnd_CritDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Critical Damage is increased by 100% for 15 seconds.[/endgame]
 
 # Melee Damage - Increase Melee Damage Bonus to 200% from 100%, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_MeleeDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,3
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_MeleeDamage/StatusEffect_All_SkillEnd_MeleeDamage.StatusEffect_All_SkillEnd_MeleeDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_MeleeDamage/UIStat_All_SkillEnd_MeleeDamage.UIStat_All_SkillEnd_MeleeDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Melee Damage is increased by 40% for 12 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_MeleeDamage/UIStat_All_SkillEnd_MeleeDamage.UIStat_All_SkillEnd_MeleeDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Melee Damage is increased by 200% for 12 seconds.[/endgame]
 
 # Fire Rate/Reload Speed - Increase Fire Rate to 20% from 11%, make it ScaleSimple, add Burst Fire Delay and Repair Time.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_FireRateReloadSpeed,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.8
@@ -3105,41 +3102,29 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/StatusEffect_Generic_KillStackReloadDamage.StatusEffect_Generic_KillStackReloadDamage,AttributeEffects.AttributeEffects[2].BaseModifierValue,0,,(BaseValueConstant=0.1,DataTableValue=(DataTable=/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_Endgame.DataTable_Raid1_Endgame,RowName=KillsStackReloadDmg,ValueName=Custom_A_21_F62C55A14374986C5D004E94DD277B3D),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/UIStat_EG_Generic_KillStackReloadDamage.UIStat_EG_Generic_KillStackReloadDamage,FormatText.string,0,,[endgame][endgamebold]Killing[/endgamebold] an enemy grants 3% Weapon Damage and Reload Speed for 25 seconds, this effect stacks.[/endgame]
 
-# Skill-End Bonus Elemental Damage - Reduce Damage to 20% from 50%, fix the number not changing on the card (credit to ZetaDaemon for the UI fix)
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,ActionSkillStarted_BonusEleDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.2
+# Skill-End Bonus Elemental Damage - Fix the number not changing on the card (credit to ZetaDaemon for the UI fix)
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,ActionSkillStarted_BonusEleDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.5
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Cryo/UIStat_EG_SkillEndBonusEleDamage_Cryo.UIStat_EG_SkillEndBonusEleDamage_Cryo,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Cryo Damage with Weapons for 10 seconds.[/endgame]
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Fire/UIStat_EG_SkillEndBonusEleDamage_Fire.UIStat_EG_SkillEndBonusEleDamage_Fire,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Fire Damage with Weapons for 10 seconds.[/endgame]
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Radiation/UIStat_EG_SkillEndBonusEleDamage_Radiation.UIStat_EG_SkillEndBonusEleDamage_Radiation,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Radiation Damage with Weapons for 10 seconds.[/endgame]
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Shock/UIStat_EG_SkillEndBonusEleDamage_Shock.UIStat_EG_SkillEndBonusEleDamage_Shock,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Shock Damage with Weapons for 10 seconds.[/endgame]
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/SkillEnd_BonusEleDamage_Corrosive/UIStat_EG_SkillEndBonusEleDamage_Corrosive.UIStat_EG_SkillEndBonusEleDamage_Corrosive,FormatText,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain $VALUE$ bonus Corrosive Damage with Weapons for 10 seconds.[/endgame]
 
-# On Grenade Throw - Reduce Damage to 15% from 25%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,GrenadeThrow_GlobalDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.15
-
-# Consecutive Hits - Reduce Damage to 0.25% from 1%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,ConsecutiveDmgStack,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.0025
+# Consecutive Hits - Make it ScaleSimple.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/ConsecutiveHits_DmgStack/UIStat_EG_Generic_ConsecutiveHitsDmgStack.UIStat_EG_Generic_ConsecutiveHitsDmgStack,FormatText,0,,[endgame][endgamebold]Consecutive Hits[/endgamebold] increase Weapon Damage by 0.25% per hit, misses remove all bonuses.[/endgame]
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/ConsecutiveHits_DmgStack/StatusEffect_Generic_ConsecutiveHitsDmgStack.StatusEffect_Generic_ConsecutiveHitsDmgStack,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 
 ### CARTEL ###
 
-# Active Nova - Increase Frequency to 1 second from 3 seconds, increase Radius to 900 from 600, reduce Damage to 2 from 7.5.
+# Active Nova - Increase Frequency to 1 second from 3 seconds, increase Radius to 900 from 600
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_PulseNova,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,7.5
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_PulseNova,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,900
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_PulseNova,Custom_B_22_F3E78C5F4BA4BD6A1DC031AF51327791,0,,1
 
-# Active Badass Damage - Reduce Damage to 40% from 75%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_UnderbossEnemyDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.4
-
-# Active Grenade Damage - Reduce Damage to 50% from 150%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_GrenadeDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.5
-
-# Active Damage Reduction - Reduce Damage Reduction to 25% from 35%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_DamageReduction,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.75
+# Active Damage Reduction - Make it ScaleSimple.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/_Generic/SkillActive_DamageMitigation/StatusEffect_All_ActiveSkill_DmgMit.StatusEffect_All_ActiveSkill_DmgMit,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 
-# Active Weapon Damage - Reduce Damage to 25% from 100%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,All_ActionSkillActive_WeaponDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.25
+# Active Weapon Damage - Make it ScaleSimple.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/_Generic/SkillActive_WeaponDamage/StatusEffect_All_SkillActive_WeaponDamage.StatusEffect_All_SkillActive_WeaponDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/_Generic/SkillActive_WeaponDamage/UIStat_SkillActive_WeaponDamage.UIStat_SkillActive_WeaponDamage,FormatText.string,0,,[endgame]While an [endgamebold]Action Skill[/endgamebold] is [endgamebold]Active[/endgamebold], Weapon Damage is increased by 25%.[/endgame]
 
@@ -3151,9 +3136,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameP
 
 # High-Health Breaker - Reduce Damage to 70% from 100%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,Passive_HighHealthBreaker,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.7
-
-# Unhealthy-Rad Damage - Reduce Bonus Radiation Damage to 50%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,Passive_UnhealthyRadDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.5
 
 # Shield-Regen Slide - Increase Shield Percentage restored to 15% from 5%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/EndGameParts/DataTable_EndGameParts_Event2.DataTable_EndGameParts_Event2,Passive_SlideRegenShields,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.15
@@ -3209,8 +3191,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/EndGameP
 # Gunner Infinite Ammo - Increase Duration to 7 seconds from 5 seconds.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_SkillEnd_NoAmmoConsumption,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,7
 
-# Gunner Splash Damage - Reduce Splash Damage Bonus to 35% from 160%, increase Duration to 20 seconds from 18 seconds, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_SkillEnd_SplashDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.35
+# Gunner Splash Damage - Increase Duration to 20 seconds from 18 seconds, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Gunner_SkillEnd_SplashDamage,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,20
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Gunner/Exit_SplashDamageIncrease/StatusEffect_Gunner_SplashDamageIncrease.StatusEffect_Gunner_SplashDamageIncrease,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Gunner/Exit_SplashDamageIncrease/UIStat_Gunner_SplashDamageIncrease.UIStat_Gunner_SplashDamageIncrease,FormatText.string,0,,[endgame]After exiting [endgamebold]Iron Bear[/endgamebold], gain 35% increased Splash damage for[/endgame]
@@ -3320,7 +3301,7 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 ### BEASTMASTER ###
 
 # Beastmaster Gamma Burst Radiation Damage - Decrease Radiation Damage Bonus to 45% from 115%, adjust description for accuracy.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Gamma_BonusRadiationDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,0.45
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Gamma_BonusRadiationDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.15
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Beastmaster/Beast_Gamma_BonusRadiationDamage/UIStat_BonusRadiationDamage.UIStat_BonusRadiationDamage,FormatText.string,0,,[endgame][endgame]While [endgamebold]Gamma Burst[/endgamebold] is active, gain $VALUE$ bonus radiation damage.[/endgame] This effect persists after [endgamebold]Gamma Burst[/endgamebold] ends until Fl4k switches weapons.[/endgame]
 
 # Beastmaster Gamma Burst Accuracy/Handling - Increase Accuracy Bonus to -2 from -0.75, increase Handling Bonus to -4 from -2.
