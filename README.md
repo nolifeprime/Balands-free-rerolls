@@ -1,1 +1,3 @@
-Complete Balands mod with just edited eridium cost for annoint rerolls
+Not affiliated with the Original creators of Balands in any way.
+
+Tweaked mod for personal use with friends
