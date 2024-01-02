@@ -4596,6 +4596,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ix
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_DLC/Ixora/Passives/DLCSkill_09/Passive_Beastmaster_DLCSkill_9.Default__Passive_Beastmaster_DLCSkill_9_C:StatDataItems_UIStatData_OakPassiveAbilityAttributeInitializer,FormatText.string,0,,[skillbold]Bonus Damage[/skillbold]: 81% of weapon damage
 
 # Rakk Attack - Increase Damage to 0.9 from 0.5 and add a note saying that this Action Skill and its augments receive Splash bonuses.
+SparkPatchEntry,(1,2,0,),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Skag,Cooldown_8_237733FC43C8C6F2B3A6558D8A0FB0C1,0,,1.0
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Balance/Beastmaster/DataTable_Beastmaster_SkillBalance.DataTable_Beastmaster_SkillBalance,Ultimate_Skag,Scalar_5_230D633C4A306BF04AB690B7CD89D6AA,0,,0.9
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/Beastmaster/_Shared/_Design/Character/ActionSkills/Skill1_RakkAttack/ActionSkill/ActionSkill_RakkAttack.Default__ActionSkill_RakkAttack_C,AbilityDescription.string,0,,FL4K sends forward 2 [actionskill]Rakk[/actionskill] to dive-bomb enemies.<br><br>This skill has multiple charges.<br><br>[italic](This [actionskill]Action Skill[/actionskill] and its [actionskill]Augments[/actionskill] receive [skillbold]Splash[/skillbold] bonuses.)[/italic]
 
