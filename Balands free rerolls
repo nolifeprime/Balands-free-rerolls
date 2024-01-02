@@ -961,12 +961,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/ClassMods/_Design/Balance/Table
 
 ### BASIC ARTIFACT STAT CHANGES ###
 
-# Area-of-Effect Damage - Reduce Area-of-Effect Damage Multiplier to 0.0033 from 0.01.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Stats2.Table_Artifact_Stats2,Area_Damage,Multiplier,0,,(BaseValueConstant=0.0033,BaseValueScale=1.000000)
-
-# Area-of-Effect Damage (Secondary) - Remove Radius Bonus.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Artifacts/_Design/PartSets/SecondaryStats/Character/Artifact_Part_Stats_AreaDamage.Artifact_Part_Stats_AreaDamage,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Attributes/Damage/Att_InstigatedRadiusDamage_DamageMultiplier.Att_InstigatedRadiusDamage_DamageMultiplier,ModifierType=Scale,ModifierValue=(BaseValueConstant=0,BaseValueAttribute=/Game/Gear/Artifacts/_Design/PartSets/Attributes/Att_Artifact_Stat_AreaDamage.Att_Artifact_Stat_AreaDamage,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Attributes/Damage/Att_InstigatedRadiusDamage_RadiusMultiplier.Att_InstigatedRadiusDamage_RadiusMultiplier,ModifierType=Scale,ModifierValue=(BaseValueConstant=0,BaseValueAttribute=None,BaseValueScale=0)))
-
 # Magazine Size - Reduce Magazine Size Multiplier to 0.0044 from 0.015, make it affect CoV Heat Rate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Stats2.Table_Artifact_Stats2,Weapon_MagazineSize,Multiplier,0,,(BaseValueConstant=0.0044,BaseValueScale=1.000000)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Artifacts/_Design/PartSets/PrimaryStats/_Weapon/Artifact_Part_Stats_Loaded.Artifact_Part_Stats_Loaded,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_AllModes_MaxLoadedAmmo.Att_Weapon_AllModes_MaxLoadedAmmo,ModifierType=Scale,ModifierValue=(BaseValueConstant=0,BaseValueAttribute=/Game/Gear/Artifacts/_Design/PartSets/Attributes/Att_Artifact_Stat_WeaponMagazineSize.Att_Artifact_Stat_WeaponMagazineSize,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse,ModifierType=Scale,ModifierValue=(BaseValueConstant=0,BaseValueAttribute=/Game/Gear/Artifacts/_Design/PartSets/Attributes/Att_Artifact_Stat_WeaponMagazineSize.Att_Artifact_Stat_WeaponMagazineSize,BaseValueScale=-1)))
@@ -1050,10 +1044,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table
 # Carrier - Damage raised to 0.7 from 0.5
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,AR_Carrier,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.7
 
-# O.P.Q-System - Damage lowered to 1 from 1.8, fire rate reduced to 3 from 6.75.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalance_Event2.DataTable_WeaponBalance_Event2,OPQS,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
-SparkLevelPatchEntry,(1,1,0,MatchAll),Game/PatchDLC/Event2/Gear/Weapon/_Unique/OPQ/Parts/Part_AR_ATL_Barrel_OPQ.Part_AR_ATL_Barrel_OPQ:AspectList_WeaponUseModeAspectData.WeaponUseComponent_BPWeaponFireProjectileComponent_ATL,FireRate,0,,(BaseValue=3)
-
 # Linc - Damage raised to 0.85 from 0.5.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_ATL.DataTable_WeaponBalance_Unique_ATL,PS_Drill,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.85
 
@@ -1124,18 +1114,12 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/ChildrenOfTheVa
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,PS_Contagion,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.15
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/Contagion/Parts/Part_PS_COV_Barrel_Contagion.Part_PS_COV_Barrel_Contagion,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Attributes/DamageMultipliers/Att_DamageReceiverMultiplier_Radiation.Att_DamageReceiverMultiplier_Radiation,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.3,BaseValueScale=1)))
 
-# Psycho Stabber - Damage reduced to 0.9 from 1.25, Melee reduced to 250% (120% melee from the attachments, 130% extra additive melee damage), Projectile Damage Type set to Melee.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,PS_PsychoStabber,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.9
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/PsychoStabber/Parts/Part_PS_COV_Barrel_PsychoStabber.Part_PS_COV_Barrel_PsychoStabber,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Melee.Att_DamageSourceInstigatorMultiplier_Melee,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Attributes/DamageMultipliers/Att_DamageSourceInstigatorMultiplier_Melee.Att_DamageSourceInstigatorMultiplier_Melee,ModifierType=Scale,ModifierValue=(BaseValueConstant=1.3,BaseValueScale=1)))
+# Psycho Stabber - Projectile Damage Type set to Melee.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/ChildrenOfTheVault/_Shared/_Design/_Unique/PsychoStabber/Parts/Part_PS_COV_Barrel_PsychoStabber.Part_PS_COV_Barrel_PsychoStabber:AspectList_WeaponUseModeAspectData.WeaponUseComponent_WeaponFireProjectileComponent,DamageSource,0,,BlueprintGeneratedClass'/Game/GameData/DamageSources/DamageSource_Melee.DamageSource_Melee_C'
 
 # Skeksil - Damage set to 1, increase bonus projectile damage to 1 from 0.75.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,PS_SKEKSIS,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_COV.DataTable_WeaponBalance_Unique_COV,PS_SKEKSIS,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1
-
-# Tizzy - Lower damage to 0.95 from 2, improve Reload Speed by 25%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,Tizzy,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.95
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Tizzy/Parts/Part_PS_COV_Barrel_Tizzy.Part_PS_COV_Barrel_Tizzy,InventoryAttributeEffects,0,,((AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_UseHeatImpulse.Att_Weapon_UseHeatImpulse,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=3.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,RowName=Tizzy,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ReloadTime.Att_Weapon_ReloadTime,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.75,BaseValueScale=1)))
 
 # Globetrottr - Damage set to 1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,HW_Globetrotter,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
@@ -1188,11 +1172,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_StarHelix,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.85
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Dahl/_Shared/_Design/_Unique/StarHelix/Parts/Part_DAL_AR_Barrel_StarHelix.Part_DAL_AR_Barrel_StarHelix,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,RowName=AR_StarHelix,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=14,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)))))
 
-# Soulrender - Reduced Damage to 1.1 from 1.25, reduce Skulls spawned to 1 from 2, increase Skull spawn chance to 33%, reduce Skull Damage to 100% from 800%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,AR_Soulrender,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.1
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,AR_Soulrender,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.33
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,AR_Soulrender,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,1
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/Soulrender/LightProjectile_Soulrender.Default__LightProjectile_Soulrender_C,ImpactedActorDamageScale.BaseValueConstant,8,8.000000,1
+# Soulrender - Increase Skull spawn chance to 50%
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,AR_Soulrender,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.5
 
 # Warlord - Increase Damage to 1.25 from 1, increase Ammo Regen Chance to 66%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,AR_Warlord,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.25
@@ -1215,10 +1196,10 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTa
 # 9-Volt - Damage Increase to 0.75 from 0.625.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SM_9Volt,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.75
 
-# Blood-Starved Beast - Lower Damage to 0.85 from 1.75, Increase explosion chance to 15% from 10%, reduce explosion damage to 150% from 500%, and fix the damage source to be SMG.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,SM_AshenBEast,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
+# Blood-Starved Beast - Increase explosion chance to 15% from 10%, and fix the damage source to be SMG.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,SM_AshenBEast,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.75
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,SM_AshenBEast,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.15
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,SM_AshenBEast,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,1.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,SM_AshenBEast,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,5
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/_Unique/AshenBeast/LightProjectile_AshenBeast.Default__LightProjectile_AshenBeast_C,DamageSource,0,,/Game/GameData/DamageSources/DamageSource_Bullet_SMG.DamageSource_Bullet_SMG_C
 
 # Boomer - Increase Damage to 1.3 from 1.05.
@@ -1261,9 +1242,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataT
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,SR_MalaksBane,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3.25
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SniperRifles/Dahl/_Shared/_Design/_Unique/MalaksBane/Parts/Part_SR_DAL_Barrel_ETech_MalaksBane.Part_SR_DAL_Barrel_ETech_MalaksBane,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.3,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=4,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_DAL.DataTable_WeaponBalance_Unique_DAL,RowName=SR_MalaksBane,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)))),(UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=1,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.75,BaseValueScale=1)))),(UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=2,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=5.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)))))
 
-# Sand Hawk - Reduce Damage to 0.64 from 1.5
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,SR_SandHawk,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.64
-
 # Stalker - Increase Damage to 3 from 1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_Weapon_BloodyHarvest.DataTable_Weapon_BloodyHarvest,SR_FrostBolt,DamageScale_2_6249E51D41B75899C0DEDD8B5EFE89ED,0,,3
 
@@ -1279,8 +1257,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Hyperion/_Shar
 # Convergence - Reduce Damage to 0.85 from 1.6.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Alisma/Gear/Weapon/DataTable_WeaponBalance_Alisma.DataTable_WeaponBalance_Alisma,SG_Convergence,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.85
 
-# Facepuncher - Increase Damageto 0.6 from 0.5.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SG_Brick,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.6
+# Facepuncher - Increase Damageto 1 from 0.5.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SG_Brick,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
 
 # Fearmonger - Reduce Damage to 0.425 from 0.55.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_Weapon_BloodyHarvest.DataTable_Weapon_BloodyHarvest,SG_Fearmonger,DamageScale_2_6249E51D41B75899C0DEDD8B5EFE89ED,0,,0.425
@@ -1306,16 +1284,13 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,SG_Reflux,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Reflux/Parts/Part_SG_Hyp_Barrel_Reflux.Part_SG_Hyp_Barrel_Reflux,InventoryAttributeEffects,0,,((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.25,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,RowName=SG_Reflux,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_CustomSightColorScheme.Att_Weapon_CustomSightColorScheme,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=2,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.4,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=0,BaseValueScale=1)))
 
-# Slow Hand - Increase Damage to 1 from 0.82, reduce Lifesteal to 1.75% from 50%.
+# Slow Hand - Increase Damage to 1 from 0.82
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SG_SlowHand,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SG_SlowHand,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.0175
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SG_SlowHand,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.5
 
-# The Butcher - Reduce Damage to 1.2 from 2.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SG_Butcher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.2
-
-# Bitch - Increase Damage to 0.8 from 0.65, increase Critical Hit Damage Bonus to 100% from 50%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Bitch,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Bitch,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,2
+# Bitch - Increase Damage to 1 from 0.65, increase Critical Hit Damage Bonus to 200% from 50%.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Bitch,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_HYP.DataTable_WeaponBalance_Unique_HYP,SM_Bitch,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,4
 
 # Cheap Tips - Damage increase to 1.1 from 1, Chip Drop Chance increased to 15%, Damage boost reduced to 10%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SM_CheapTips,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.1
@@ -1441,10 +1416,10 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTa
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,PS_LoveDrill,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,1
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/_Unique/LoveDrill/Legendary/UIStat_Manufacturer_Text_LoveDrill.UIStat_Manufacturer_Text_LoveDrill,Text,0,,Has a [bold]50%[/bold] chance to deal bonus [shock]Shock[/shock] damage.
 
-# Lucky 7 - Increase Damage to 1.05 from 0.7, increase Reload Mod chance to 33%, reduce "7" chance to 20%, reduce the Damage of "7" by 65% and increase Reload Speed to 0.75 from 1.25.
+# Lucky 7 - Increase Damage to 1.05 from 0.7, increase Reload Mod chance to 50%, set "7" chance to 50%, reduce the Damage of "7" by 65% and increase Reload Speed to 0.75 from 1.25.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.05
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.33
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,0.2
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.5
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,PS_Lucky7,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,0.5
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Firing/StatusEffect_Lucky7_7.StatusEffect_Lucky7_7,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot,ModifierType=PreAdd,BaseModifierValue=(BaseValueConstant=6,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.35,BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Lucky7/Parts/Part_PS_JAK_Barrel_Lucky7.Part_PS_JAK_Barrel_Lucky7,InventoryAttributeEffects,0,,((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,RowName=PS_Lucky7,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_OverrideManufacturerDescription.Att_Weapon_OverrideManufacturerDescription,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ReloadTime.Att_Weapon_ReloadTime,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.75,BaseValueScale=1)))
 
@@ -1554,8 +1529,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTa
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Decoupler,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,8.2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Decoupler/Parts/Part_PS_MAL_Barrel_Decoupler.Part_PS_MAL_Barrel_Decoupler,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=60,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,RowName=PS_Decoupler,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ReloadTime.Att_Weapon_ReloadTime,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.4,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.5,BaseValueScale=1)))))
 
-# Free Radical - Reduce Damage to 0.8 from 4, reduce Magazine Size by 50%, improve Reload Speed by 40%, increase Fire Rate by 40%, increase Splash Radius by 50%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Weapons/DataTable_WeaponBalance_Ixora2.DataTable_WeaponBalance_Ixora2,Deatomizer,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
+# Free Radical - Reduce Magazine Size by 50%, improve Reload Speed by 40%, increase Fire Rate by 40%, increase Splash Radius by 50%.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Weapons/DataTable_WeaponBalance_Ixora2.DataTable_WeaponBalance_Ixora2,Deatomizer,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,4
 
 # Frozen Devil - Increase Damage to 0.3 from 0.25, increase Ice Spike Mode Damage to 10 from 1, reduce Ice Spike Cryogenic-Frozen Charge Damage Bonus from 7 to 2.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,PS_FrozenDevil,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.3
@@ -1634,10 +1609,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Re-Engagement/Weapons
 # Cloud Kill - Increase Damage to 1.3 from 1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_CloudKill,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.3
 
-# Cutsman - Reduce Damage to 1.45 from 4, reduce Damage-over-Time by 40%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_Cutsman,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.45
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/SMGs/Maliwan/_Shared/_Design/_Unique/Cutsman/Parts/Part_SM_MAL_Barrel_Cutsman.Part_SM_MAL_Barrel_Cutsman,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius.Att_Weapon_DamageRadius,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,RowName=SM_Cutsman,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_GoreModifier.Att_Weapon_GoreModifier,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=5000,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=-1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_CustomSightColorScheme.Att_Weapon_CustomSightColorScheme,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_StatusEffectDamage.Att_Weapon_StatusEffectDamage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)))))
-
 # Destructo Spinner - Increase Damage to 1.45 from 1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_MAL.DataTable_WeaponBalance_Unique_MAL,SM_DestructoSpin,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.45
 
@@ -1666,9 +1637,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Balance/DataTabl
 
 # P2P Networker - Increase Damage to 1.2 from 0.6.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Balance/DataTable_Raid1_Weapons.DataTable_Raid1_Weapons,P2PNetworker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.2
-
-# Plasma Coil - Reduce Damage to 2.15 from 20.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,PlasmaCoil,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.15
 
 # Polyamorous - Increase Damage to 3 from 1.5, reduce Tesla Damage to 0.4 from 0.5, fix the Secondary Firing Mode not receiving proper Damage bonuses, reduce recoil by 80%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/EventVDay/Gear/Weapon/DataTable_WeaponBalance_EventVDay.DataTable_WeaponBalance_EventVDay,PolyAim,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3
@@ -1755,9 +1723,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,SM_Earthbound,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.25
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/Earthbound/Parts/Part_SM_TED_Barrel_Earthbound.Part_SM_TED_Barrel_Earthbound,InventoryAttributeEffects,0,,((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,RowName=SM_Earthbound,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.4,BaseValueScale=1)))
 
-# Needle Gun - Increase Damage to 0.85 from 0.75, reduce Stacking Damage Bonus to 0.04 from 0.2, reduce Reload Damage to 2.5 from 5.
+# Needle Gun - Increase Damage to 0.85 from 0.75, reduce Reload Damage to 2.5 from 5.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalance_Event2.DataTable_WeaponBalance_Event2,SM_NeedleGun,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.85
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalance_Event2.DataTable_WeaponBalance_Event2,SM_NeedleGun,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.02
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/Weapon/DataTable_WeaponBalance_Event2.DataTable_WeaponBalance_Event2,SM_NeedleGun_3,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,2.5
 
 # P.A.T. Mk. III - Set Damage to 1.15.
@@ -1855,8 +1822,7 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard3/Gear/Weapons/Uni
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/Proj_TinyTinaGun.Proj_TinyTinaGun_C:GbxProjectileMovement_GEN_VARIABLE,MaxSpeed,0,,3750
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard3/Gear/Weapons/Unique/TinyTinaGun/Proj_TinyTinaGun.Default__Proj_TinyTinaGun_C,FuseTimer,0,,2
 
-# Unkempt Harold - Reduce Damage to 0.385 from 1, set base Splash Radius to 100, reduce time required to split by 25%, reduce Projectile Speed by 20%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_UnkemptHarold,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.385
+# Unkempt Harold - Set base Splash Radius to 100, reduce time required to split by 25%, reduce Projectile Speed by 20%.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/Parts/Part_PS_TOR_Barrel_UnkemptHarold.Part_PS_TOR_Barrel_UnkemptHarold,InventoryAttributeEffects,0,,((AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_BarrelType.Att_BarrelType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=3,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,RowName=PS_UnkemptHarold,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/WeaponAttributes/Att_Weapon_OverrideManufacturerDescription.Att_Weapon_OverrideManufacturerDescription,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=16,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius.Att_Weapon_DamageRadius,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=100,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ProjectileSpeedScale.Att_Weapon_ProjectileSpeedScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.8,BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/LightProjectile_TOR_PS_UnkemptHarold.Default__LightProjectile_TOR_PS_UnkemptHarold_C,TimedEvents[0].Time,0,,0.075
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/_Unique/UnkemptHarold/LightProjectile_TOR_PS_UnkemptHarold.Default__LightProjectile_TOR_PS_UnkemptHarold_C,TimedEvents[1].Time,0,,0.15
@@ -1876,8 +1842,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Uniq
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Parts/Part_HW_TOR_Barrel_Nukem.Part_HW_TOR_Barrel_Nukem:AspectList_WeaponDamageTypeAspectData,ImpactData,0,,/Game/GameData/Impacts/Linger/Impact_Linger_Generic.Impact_Linger_Generic
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/_Unique/Nukem/Parts/Part_HW_TOR_Barrel_Nukem.Part_HW_TOR_Barrel_Nukem:AspectList_WeaponDamageTypeAspectData,Priority,0,,Ultra
 
-# Plaguebearer - Set Damage to 1.1.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,HW_Plague,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.1
+# Plaguebearer - Set Damage to 2.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,HW_Plague,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2
 
 # Quadomizer - Increase Damage to 2.1 from 0.8
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,HW_Rampager,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.1
@@ -1901,20 +1867,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 # Critical Thug - Set Damage to 1, change effect description to be more accurate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,CriticalThug,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/CriticalThug/UIStat_Desc_CriticalThug.UIStat_Desc_CriticalThug,Text,0,,[skill]Critical Hit Damage[/skill] richochets to [bold]one[/bold] nearby enemy.
-
-# Flakker - Set Damage to 2.2 from 3, increase Ammo Cost to 4 from 1, increase Projectile Speed of initial projectile to 600 from 300, reduce Projectile Acceleration to 1750 from 2500.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,SG_Flakker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.2
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Parts/Part_SG_Torgue_Barrel_Flakker.Part_SG_Torgue_Barrel_Flakker,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=4.000000,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_DamageRadius.Att_Weapon_DamageRadius,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=175,BaseValueScale=1)),(AttributeToModify=/Game/Gear/Weapons/_Shared/_Design/_Manufacturers/Torgue/Attributes/Att_TOR_ProjectileType.Att_TOR_ProjectileType,ModifierType=OverrideBaseValue,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.000000,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,RowName=SG_Flakker,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)))))
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/Proj_TOR_SG_Flakker.Proj_TOR_SG_Flakker_C:GbxProjectileMovement_GEN_VARIABLE,InitialSpeed,0,,600
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/Proj_TOR_SG_Flakker.Proj_TOR_SG_Flakker_C:GbxProjectileMovement_GEN_VARIABLE,ProjectileAcceleration,0,,1750
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/Proj_TOR_SG_Flakker.Proj_TOR_SG_Flakker_C:GbxProjectileMovement_GEN_VARIABLE,MaxSpeed,0,,4500
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_01.Default__LightProjectile_TOR_SG_Flakker_Stage_01_C,Speed,0,,500.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_01.Default__LightProjectile_TOR_SG_Flakker_Stage_01_C,MaxSpeed,0,,1250.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_02.Default__LightProjectile_TOR_SG_Flakker_Stage_02_C,Speed,0,,700.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_03.Default__LightProjectile_TOR_SG_Flakker_Stage_03_C,Speed,0,,800.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_03.Default__LightProjectile_TOR_SG_Flakker_Stage_03_C,MaxSpeed,0,,1200.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_End.Default__LightProjectile_TOR_SG_Flakker_Stage_End_C,Speed,0,,500.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Shotguns/Torgue/_Shared/_Design/_Unique/Flakker/Projectiles/LightProjectile_TOR_SG_Flakker_Stage_End.Default__LightProjectile_TOR_SG_Flakker_Stage_End_C,MaxSpeed,0,,1000.0
 
 # Redline - Set Damage to 1, reduce Gearbox Buff to 2.25 from 3.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_TOR.DataTable_WeaponBalance_Unique_TOR,SG_Redline,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
@@ -1976,11 +1928,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_S
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,AR_Dictator,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.9
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/AssaultRifles/Vladof/_Shared/_Design/_Unique/Dictator/Parts/Part_AR_VLA_Underbarrel_Dictator.Part_AR_VLA_Underbarrel_Dictator,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=2,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.4,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayAccuracyScale.Att_Weapon_SwayAccuracyScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayZoomAccuracyScale.Att_Weapon_SwayZoomAccuracyScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayDiscHeight.Att_Weapon_SwayDiscHeight,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayDiscWidth.Att_Weapon_SwayDiscWidth,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.67,BaseValueScale=1)))))
 
-# The Monarch - Reduce Damage to 0.8 from 1.6, increase Ammo Consumption to 2, increase Magazine Size by 70%,  make the Underbarrel work better with the Double Grip and adjusted the Bipod Mode damage to account for increased projectile count.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,AR_TheMonarch,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Parts/Part_AR_VLA_Barrel_Monarch.Part_AR_VLA_Barrel_Monarch,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=3,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Spread.Att_Weapon_Spread,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.250000,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1,DataTableValue=(DataTable=/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,RowName=AR_TheMonarch,ValueName=DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53),BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_MaxLoadedAmmo.Att_Weapon_MaxLoadedAmmo,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=1.7,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ShotAmmoCost.Att_Weapon_ShotAmmoCost,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=1,BaseValueScale=1)))))
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/_Shared/_Unique/Monarch/Parts/Part_AR_VLA_Underbarrel_Monarch.Part_AR_VLA_Underbarrel_Monarch,WeaponUseModeAttributeEffects.WeaponUseModeAttributeEffects,0,,((UseMode=(EWeaponUseMode=EWeaponUseMode_MAX),UseModeBitmask=2,AttributeEffects=((AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilHeightScale.Att_Weapon_RecoilHeightScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.25,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_RecoilWidthScale.Att_Weapon_RecoilWidthScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.4,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayAccuracyScale.Att_Weapon_SwayAccuracyScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayZoomAccuracyScale.Att_Weapon_SwayZoomAccuracyScale,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayDiscHeight.Att_Weapon_SwayDiscHeight,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_SwayDiscWidth.Att_Weapon_SwayDiscWidth,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=0.6,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Weapons/Att_Weapon_ProjectilesPerShot.Att_Weapon_ProjectilesPerShot,ModifierType=ScaleSimple,ModifierValue=(BaseValueConstant=2.67,BaseValueScale=1)))))
-
 # Web Slinger - Increase Damage to 2.5 from 1, increase Cryo Projectile Chance to 33% from 20, increase Underbarrel Damage to 50 from 1, set Damage to ScaleSimple from Scale, reduce Recoil by 20% in primary mode, increase Underbarrel Damage Radius to 500 from 300, reduce number of Projectiles to 1 from 2 while using the Underbarrel, Reduce Ammo Regen Delay of Underbarrel to 3 seconds from 8, increase Projectile Speed to 9000 from 3000.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_WebSlinger,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,2.75
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/Weapons/DataTable_WeaponBalance_Takedown2.DataTable_WeaponBalance_Takedown2,AR_WebSlinger,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.33
@@ -1998,11 +1945,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/LightProjectile_VLA_PS_Firefly_Child.Default__LightProjectile_VLA_PS_Firefly_Child_C,Acceleration,0,,400
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/_Unique/Firefly/UIStat_Firefly_Desc.UIStat_Firefly_Desc,Text,0,,Shoots [skill]fireflies[/skill] that hatch babies in the [skill]flesh[/skill] of enemies.
 
-# Infinity - Increase Damage to 1.3 from 0.5.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,PS_Infiniti,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.3
-
-# Lightshow - Reduce Damage to 0.325 from 1.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Lasocannon,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.325
+# Infinity - Increase Damage to 3 from 0.5.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,PS_Infiniti,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,3
 
 # Magnificient - Increase Damage to 1.05 from 0.4, remove Accuracy Spread and Recoil Height/Width penalties, reduce Fire Rate by 25%, add an ability to the magazine that increases fire rate the higher your magazine size is (Up to 150%. Number is .0024575 basevaluescale for 100% bonus at MAXIMUM mag size with Moze with vanilla mag size boosts, 0.003486 for 150%.)
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,PS_Magnificent,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.05
@@ -2012,10 +1956,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/Pistols/Vladof/_Shared/
 
 # Miscreant - Reduce Damage to 1.25 from 2.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/Gear/Weapon/DataTable_WeaponBalance_Geranium.DataTable_WeaponBalance_Geranium,PS_Miscreant,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.25
-
-# Backburner - Reduce Damage to 1.5 from 2, reduce Child Projectile Damage to 1.25 from 2.5.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,HW_Backburner,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.5
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Mayhem2/Gear/Weapon/DataTable_WeaponBalance_Mayhem2.DataTable_WeaponBalance_Mayhem2,HW_Backburner,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1.25
 
 # ION CANNON - Set Damage to 5, adjust Ammo Consumption to make x1 Cannons consume less ammo.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,HW_IonCannon,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,5
@@ -2028,10 +1968,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Sh
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/LightProjectile_HW_VLA_Shells_Barrel_CloudBurst.Default__LightProjectile_HW_VLA_Shells_Barrel_CloudBurst_C,Speed,0,,1300
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/LightProjectile_VLA_HW_CloudBurst_MiniChild.Default__LightProjectile_VLA_HW_CloudBurst_MiniChild_C,Speed,0,,2500
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/HeavyWeapons/Vladof/_Shared/_Design/_Unique/CloudBurst/LightProjectile_VLA_HW_CloudBurst_MiniChild.Default__LightProjectile_VLA_HW_CloudBurst_MiniChild_C,MaxBounces,0,,0
-
-# Kickcharger - Reduce Damage to 1 from 4, reduce Charge Damage Multiplier to 2 from 4.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,Kickcharger,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Weapons/DataTable_WeaponBalance_Ixora.DataTable_WeaponBalance_Ixora,Kickcharger,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,2
 
 # Mongol - Increase Damge to 0.8 from 0.6, increase Splash Radius to 250 from 175.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_VLA.DataTable_WeaponBalance_Unique_VLA,HW_Mongol,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.8
@@ -2580,12 +2516,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Shields/Uniq
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Shields/Unique/SuperSoldier/StatusEffect_Ability_SuperSoldier2.StatusEffect_Ability_SuperSoldier2,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=1.5,DataTableValue=,AttributeInitializer=,BaseValueScale=1)),(AttributeData=/Game/GameData/Attributes/Character/Att_GroundSpeedScale.Att_GroundSpeedScale,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=1.25,DataTableValue=,AttributeInitializer=,BaseValueScale=1)),(AttributeData=/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_AmmoRegen.Att_Players_AmmoRegen,ModifierType=PostAdd,BaseModifierValue=(BaseValueConstant=0.05,DataTableValue=,AttributeInitializer=,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0.66,DataTableValue=,AttributeInitializer=,BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Shields/Unique/SuperSoldier/UIStat_Desc2_SuperSoldier.UIStat_Desc2_SuperSoldier,Text.string,0,,Gain [skill]fire rate[/skill], [skill]Burst Fire delay reduction[/skill], [skill]ammo regeneration[/skill], and [skill]movement speed[/skill] while your shield is full.
 
-# Re-Volter - Reduce Bonus Shock Damage to 25% from 200%, reduce Fire Rate Bonus to 25% from 50%, add Burst Fire Delay.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,Re-Volter,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.25
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,Re-Volter,Secondary_1_62_F1E72F2542B441230290B388F4C494D1,0,,1.25
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,Re-Volter,Secondary_2_63_5492A1134C687D18D386DAA6A8FF185E,0,,0.75
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Shields/_Unique/Re-Volter/PresStatusEffect_Revolter.PresStatusEffect_Revolter,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,RowName=Re-Volter,ValueName=Secondary_1_62_F1E72F2542B441230290B388F4C494D1),AttributeInitializer=,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=ScaleSimple,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora2/Gear/Shields/DataTable_ShieldBalance_Ixora2.DataTable_ShieldBalance_Ixora2,RowName=Re-Volter,ValueName=Secondary_2_63_5492A1134C687D18D386DAA6A8FF185E),AttributeInitializer=,BaseValueScale=1)))
-
 # Mana Well - Reduce Bonus Shock Damage to 50% from 100%, and reduce Damage Resistance to 65%, make description accurate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard3/Gear/Shields/DataTable_ShieldBalance_VaultCard3.DataTable_ShieldBalance_VaultCard3,ManaWell,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.65
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard3/Gear/Shields/DataTable_ShieldBalance_VaultCard3.DataTable_ShieldBalance_VaultCard3,ManaWell,Secondary_1_62_F1E72F2542B441230290B388F4C494D1,0,,0.5
@@ -2700,9 +2630,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/Gre
 # It's Piss - Set Damage to -0.75.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,Piss,Damage_12_F33DA0994756D761207677A51A156787,0,,-0.75
 
-# Hex - Set Damage to -5.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,Seeker,Damage_12_F33DA0994756D761207677A51A156787,0,,-5
-
 # ECHO-2 - Increase Damage to 1.2 from 0.35, increase Radius to 1.6 from 0.8, reduce Fuse Time to 2 from 3.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_ECHO2,Damage_12_F33DA0994756D761207677A51A156787,0,,1.20
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/GrenadeMods/_Design/Balance/GrenadeMod_Unique_Balance_Table.GrenadeMod_Unique_Balance_Table,LGD_ECHO2,Radius_13_9DDB780D4981106D3843E19FAC0856D3,0,,1.6
@@ -2713,9 +2640,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/BloodyHarvest/Gear/_Design/
 
 # Lightspeed - Reduce Damage to -0.4 from 0.5.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Takedown2/Gear/GrenadeMods/GrenadeMod_Unique_BalanceTable_Takedown2.GrenadeMod_Unique_BalanceTable_Takedown2,DAF_Lightspeed,Damage_12_F33DA0994756D761207677A51A156787,0,,-0.4
-
-# Fish Slap - Reduce Damage to 0 from 3.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Event2/Gear/GrenadeMods/GrenadeMod_Event2_Table.GrenadeMod_Event2_Table,FishSlap,Damage_12_F33DA0994756D761207677A51A156787,0,,0
 
 # Mesmer - Set Damage to 0.7.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/GrenadeMods/DataTable_GrenadeModBalance_Ixora2.DataTable_GrenadeModBalance_Ixora2,Mesmer,Damage_12_F33DA0994756D761207677A51A156787,0,,0.7
@@ -2974,11 +2898,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table
 # Static Touch - Make the description more accurate. Also fix the description saying 100% damage (because the Splatter Gun's damage was boosted.)
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Legendary/Slide/StaticTouch/UIStat_Artifact_Ability_StaticTouch.UIStat_Artifact_Ability_StaticTouch,FormatText,0,,Your [skill]Melee[/skill] attacks now do bonus [shock]Shock[/shock] damage that chains to nearby enemies.
 
-# White Elephant - Reduce Damage to 1.4 from 2.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,LEGENDARY_WhiteElephant_DamageMultiplier,Offset,0,,(BaseValueConstant=1.4,BaseValueScale=1.000000)
-
-# Unleash the Dragon - Set damage to 0.8.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_ElDragonJr_DoTDamage,Offset,0,,(BaseValueConstant=0.8,BaseValueScale=1.000000)
+# Unleash the Dragon - Set damage to 2.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_ElDragonJr_DoTDamage,Offset,0,,(BaseValueConstant=2,BaseValueScale=1.000000)
 
 # Phoenix Tears - Add 50% increased FFYL Duration and FFYL Movement Speed, add 10% health regen.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Artifacts/_Design/PartSets/Abilities/_Unique/PhoenixTears/Artifact_Part_Ability_PhoenixTears.Artifact_Part_Ability_PhoenixTears,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/GameData/Attributes/Health/Att_HealthActiveRegenerationRate.Att_HealthActiveRegenerationRate,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=0,BaseValueAttribute=/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/HolyGrail/Att_HolyGrail_HealthRegen_SecondWind.Att_HolyGrail_HealthRegen_SecondWind,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Attributes/Health/Att_FFYLDownedTime.Att_FFYLDownedTime,ModifierType=Scale,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)),(AttributeToModify=/Game/GameData/Attributes/Character/Att_InjuredSpeed.Att_InjuredSpeed,ModifierType=Scale,ModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)))
@@ -2996,12 +2917,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table
 # Road Warrior - Increase Saw Damage to 1.5 from 0.9.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Artifacts/_Design/Balance/Table_Artifact_Abilities2.Table_Artifact_Abilities2,UNIQUE_RoadWarrior_SawDamage,Offset,0,,(BaseValueConstant=1.5,BaseValueScale=1.000000)
 
-# Pearl of Ineffable Knowledge - Increase damage for the first 15 stacks to 3.33% from 1%, reduce maximum stack bonus to 50% from 90%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Artifacts/DataTable_ArtifactBalance_Hibiscus.DataTable_ArtifactBalance_Hibiscus,PUK,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,0.225
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Artifacts/DataTable_ArtifactBalance_Hibiscus.DataTable_ArtifactBalance_Hibiscus,PUK,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.0333
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/Att_Artifact_Ability_PUK_DMGIncrease.Att_Artifact_Ability_PUK_DMGIncrease:ValueResolver_ConstantAttributeValueResolver,Value,0,,(BaseValueConstant=0.500000,DataTableValue=(DataTable=None,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1.000000)
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Artifacts/_Design/_Unique/PUK/UISTAT_Artifact_Ability_PUK_Description.UISTAT_Artifact_Ability_PUK_Description,Text,0,,Consecutive successful hits grant 3.33% increased damage per hit up to 15 times. At maximum stacks, add an additional +50% damage.
-
 # Lunacy - Reduce Recharge Delay Penalty to 100% from 216%.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Artifacts/DataTable_ArtifactBalance_Hibiscus.DataTable_ArtifactBalance_Hibiscus,Lunacy,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,2
 
@@ -3017,12 +2932,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/DataTa
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,DeathRally,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,-0.3
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/StatusEffect_Deathrattle_SecondWIndBonus.StatusEffect_Deathrattle_SecondWIndBonus,AttributeEffects,0,,((AttributeData=/Game/GameData/Weapons/Att_Weapon_Damage.Att_Weapon_Damage,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=DeathRally,ValueName=Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86),AttributeInitializer=,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_FireRate.Att_Weapon_FireRate,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=DeathRally,ValueName=Custom_B_22_F3E78C5F4BA4BD6A1DC031AF51327791),AttributeInitializer=,BaseValueScale=1)),(AttributeData=/Game/GameData/Weapons/Att_Weapon_BurstFireDelay.Att_Weapon_BurstFireDelay,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=DeathRally,ValueName=Damage_7_39142BF947B2CBE02701DBA97A4D507F),AttributeInitializer=,BaseValueScale=1)))
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Deathrattle/UIStat_Artifact_Ability_Deathrattle_Description.UIStat_Artifact_Ability_Deathrattle_Description,Text.string,0,,Instead of dying, get one automatic [skill]Second Wind[/skill]. Resets on death when [skill]Deathrattle[/skill] is equipped. Every [skill]Second Wind[/skill] grants improved [skill]Damage[/skill], [skill]Fire Rate[/skill], and [skill]Burst Fire Delay[/skill] for 60 seconds.
-
-# Toboggan - Reduce Amp Damage Bonus to 70% from 100%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,Toboggan,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,Toboggan,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,0.7
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Parts/Artifact_Part_Ability_Toboggan.Artifact_Part_Ability_Toboggan,InstigatorAttributeEffects,0,,((AttributeToModify=/Game/PlayerCharacters/_Shared/_Design/Attributes/_Shared/Att_Players_Slide_SpeedScale.Att_Players_Slide_SpeedScale,ModifierType=Scale,ModifierValue=(BaseValueConstant=0,DataTableValue=(DataTable=Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=Toboggan,ValueName=Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86),BaseValueScale=1)))
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora/Gear/Artifacts/_Design/_Unique/Toboggan/Att_Artifact_Ability_Toboggan_SlideSpeed.Att_Artifact_Ability_Toboggan_SlideSpeed:ValueResolver_ConstantAttributeValueResolver,Value.DataTableValue,0,,(DataTable=/Game/PatchDLC/Ixora/Gear/Artifacts/DataTable_ArtifactBalance_Ixora.DataTable_ArtifactBalance_Ixora,RowName=Toboggan,ValueName=Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86)
 
 # Company Man  - Make it always spawn with three (non-manufacturer) passive stat bonuses, add Burst Fire Delay to Fire Rate.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Artifacts/_Unique/CompanyMan/Atlas/Balance/PartSet_Artifact_CompanyMan_Atlas.PartSet_Artifact_CompanyMan_Atlas,ActorPartLists.ActorPartLists[4].MultiplePartSelectionRange.Min,0,,3
@@ -3057,37 +2966,32 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CooldownRate/StatusEffect_All_SkillEnd_CooldownRate.StatusEffect_All_SkillEnd_CooldownRate,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CooldownRate/UIStat_All_SkillEnd_CooldownRate.UIStat_All_SkillEnd_CooldownRate,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], action skill cooldown rate is increased by 30% for 15 seconds.[/endgame]
 
-# Lifesteal - Reduce Lifesteal Bonus to 1.5% from 15%, reduce Duration to 10 seconds from 12 seconds.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_LifeSteal,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.015
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_LifeSteal,Duration_9_5EBB97554E1A0E96E99FB79D0C389934,0,,10
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_LifeSteal/UIStat_All_SkillEnd_LifeSteal.UIStat_All_SkillEnd_LifeSteal,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], gain 1.5% Life Steal for 10 seconds.[/endgame]
-
 # Grenade Ammo - Increase Grenades earned to 2 from 1.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillStart_GiveGrenadeAmmo,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillStart_AddGrenade/UIStat_All_SkillEnd_AddGrenade.UIStat_All_SkillEnd_AddGrenade,FormatText,0,,[endgame]On [endgamebold]Action Skill Start[/endgamebold], Regenerate $VALUE$ grenades.[/endgame]
 
-# Weapon Damage - Reduce Damage Bonus to 25% from 100%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_WeaponDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.25
+# Weapon Damage - Make it ScaleSimple.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_WeaponDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_WeaponDamage/StatusEffect_All_SkillEnd_WeaponDamage.StatusEffect_All_SkillEnd_WeaponDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_WeaponDamage/UIStat_All_SkillEnd_WeaponDamage.UIStat_All_SkillEnd_WeaponDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Weapon Damage is increased by 25% for 12 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_WeaponDamage/UIStat_All_SkillEnd_WeaponDamage.UIStat_All_SkillEnd_WeaponDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Weapon Damage is increased by 100% for 12 seconds.[/endgame]
 
-# Splash Damage - Reduce Splash Damage Bonus to 30% from 125%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_SplashDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.3
+# Splash Damage - make it ScaleSimple.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_SplashDamage,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,2.25
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_SplashDamage/StatusEffect_All_SkillEnd_SplashDamage.StatusEffect_All_SkillEnd_SplashDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_SplashDamage/UIStat_All_SkillEnd_SplashDamage.UIStat_All_SkillEnd_SplashDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Splash Damage is increased by 30% for 12 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_SplashDamage/UIStat_All_SkillEnd_SplashDamage.UIStat_All_SkillEnd_SplashDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Splash Damage is increased by 125% for 12 seconds.[/endgame]
 
 # Damage Reduction - Increase Damage Reduction to -25% from -15%, make it ScaleSimple.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_DamageReduction,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.75
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_DamageReduction/StatusEffect_All_SkillEnd_DamageReduction.StatusEffect_All_SkillEnd_DamageReduction,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_DamageReduction/UIStat_All_SkillEnd_DamageReduction.UIStat_All_SkillEnd_DamageReduction,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], damage taken is reduced by 25% for 12 seconds.[/endgame]
 
-# Critical Damage - Reduce Critical Damage Bonus to 35% from 100%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_CritDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.35
+# Critical Damage - make it ScaleSimple.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_CritDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CritDamage/StatusEffect_All_SkillEnd_CritDamage.StatusEffect_All_SkillEnd_CritDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_CritDamage/UIStat_All_SkillEnd_CritDamage.UIStat_All_SkillEnd_CritDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Critical Damage is increased by 30% for 15 seconds.[/endgame]
 
-# Melee Damage - Reduce Melee Damage Bonus to 40% from 100%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_MeleeDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.4
+# Melee Damage - Increase Melee Damage Bonus to 200% from 100%, make it ScaleSimple.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_MeleeDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,3
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_MeleeDamage/StatusEffect_All_SkillEnd_MeleeDamage.StatusEffect_All_SkillEnd_MeleeDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_MeleeDamage/UIStat_All_SkillEnd_MeleeDamage.UIStat_All_SkillEnd_MeleeDamage,FormatText.string,0,,[endgame]On [endgamebold]Action Skill End[/endgamebold], Melee Damage is increased by 40% for 12 seconds.[/endgame]
 
@@ -3118,9 +3022,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 # Health Regen - Improve Health Regen to 0.08 from 0.0125.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_HealthRegen,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.08
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/_Generic/SkillEnd_HealthRegen/UIStat_All_SkillEnd_HealthRegen.UIStat_All_SkillEnd_HealthRegen,Initializer.DataTableValue.RowName,0,,All_ActionSkillEnd_HealthRegen
-
-# Next Magazine Bonus Elemental Damage - Reduce Bonus Element Damage to 25% from 100%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_NextMagBonusDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.25
 
 # Status Effect Damage/Chance - Make it ScaleSimple and affect Cryo Rate.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,All_ActionSkillEnd_ElementalChance,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.75
@@ -3430,8 +3331,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Shield_StealthNova,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,2.5
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Shield_StealthNova,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,900
 
-# Beastmaster Rakk Increased Damage - Reduce Damage Bonus to 30% from 100%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Rakk_Slag,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.3
+# Beastmaster Rakk Increased Damage - Set Damage Bonus to 100%.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_Rakk_Slag,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1
 
 # Beastmaster Attack Command Lifesteal - Set Lifesteal Bonus to 3%, set Duration to 8 seconds
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_AttackCmd_LifeSteal,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.03
@@ -3453,10 +3354,10 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGame
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_RakkAttackCharge,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Beastmaster/RakkAttackCharge/UIStat_Beast_RakkCharge.UIStat_Beast_RakkCharge,FormatText,0,,[endgame]Grants two extra charges of [endgamebold]Rakk Attack![/endgamebold][/endgame]
 
-# Beastmaster Rakk Critical Damage - Reduce Critical Damage Bonus to 40% from 100%, make it ScaleSimple.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_RakkStart_CritDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,1.4
+# Beastmaster Rakk Critical Damage - Set Critical Damage Bonus to 100%, make it ScaleSimple.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/DataTable_EndGameParts.DataTable_EndGameParts,Beast_RakkStart_CritDamage,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Beastmaster/RakkUsed_CritDamage/StatusEffect_Beast_RakkCrit.StatusEffect_Beast_RakkCrit,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Beastmaster/RakkUsed_CritDamage/UIStat_Beast_RakkCrit.UIStat_Beast_RakkCrit,FormatText.string,0,,[endgame]After using [endgamebold]Rakk Attack![/endgamebold], gain 40% critical hit damage for 8 seconds.[/endgame]
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Beastmaster/RakkUsed_CritDamage/UIStat_Beast_RakkCrit.UIStat_Beast_RakkCrit,FormatText.string,0,,[endgame]After using [endgamebold]Rakk Attack![/endgamebold], gain 100% critical hit damage for 8 seconds.[/endgame]
 
 # Rakk Increased Damage - Make the description accurate and also make it not drop.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/EndGameParts/Character/Beastmaster/RakkSlag/UIStat_Beast_RakkSlag.UIStat_Beast_RakkSlag,FormatText.string,0,,[endgame]Enemies damaged by [endgamebold]Rakk Attack![/endgamebold] take $VALUE$ increased damage for a short time. [italic](Anointment currently completely ineffective!)[/italic][/endgame]
@@ -5471,12 +5372,6 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/Gua
 
 # Topped Off - Reduce Cooldown to 50% from 200%.
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PlayerCharacters/_Shared/_Design/GuardianRank/Abilities/SE_VeteranRank_Refresher.SE_VeteranRank_Refresher,AttributeEffects,0,,((AttributeData=/Game/GameData/Attributes/Character/Att_Character_ActionSkill_GlobalCooldownRate.Att_Character_ActionSkill_GlobalCooldownRate,ModifierType=Scale,BaseModifierValue=(BaseValueConstant=0.5,BaseValueScale=1)))
-
-# Dead Man Walking - Reduce FFYL Bonus to 30% from 50%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Geranium/PlayerCharacters/_Shared/_Design/GuardianRank/Table_GuardianRank_Balance_Geranium.Table_GuardianRank_Balance_Geranium,DeadManWalking_ReducedConsumption,Value,0,,(BaseValueConstant=-0.3,BaseValueScale=1)
-
-# Too Angry to Die - Reduce FFYL Restoration Bonus to 3% from 5%.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/PlayerCharacters/_Shared/_Design/GuardianRank/Attributes/Table_GuardianRank_Balance_Hibiscus.Table_GuardianRank_Balance_Hibiscus,TooAngryToDieFFYLRestorationMod,Value,0,,(BaseValueConstant=0.03,BaseValueScale=1)
 
 #######################
 ### VEHICLE CHANGES ###
