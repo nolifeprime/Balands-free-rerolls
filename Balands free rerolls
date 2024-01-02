@@ -2484,10 +2484,6 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldA
 # Messy Breakup - Set Damage to 0.075
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_Unique_BalanceData.ShieldAug_Unique_BalanceData,LGD_Breakup,Primary_1_56_207C26E1450330458D6C38B245C338C5,0,,0.075
 
-# Stop-Gap - Damage Immunity changed to Damage Reduction.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Shields/_Design/_Uniques/StopGap/UIStat_Shield_StopGap_Desc.UIStat_Shield_StopGap_Desc,FormatText,0,,On Shield Break, become [skill]resistant[/skill] to any damage taken for [skill]5[/skill] seconds.
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/Gear/Shields/_Design/_Uniques/StopGap/CDM_ShieldAug_StopGap.CDM_ShieldAug_StopGap,DamageValue,0,,(BaseValueConstant=0.5,DataTableValue=(DataTable=,RowName=,ValueName=),BaseValueAttribute=None,AttributeInitializer=None,BaseValueScale=1)
-
 # Ward - Increase Recharge Delay to 1 from 0, increase Recharge Rate to 0.5 from 0, increase health regen to 5%/10% from 2%/4%, replace Weapon Damage with Damage Reduction.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_Unique_BalanceData.ShieldAug_Unique_BalanceData,Ward,Capacity_26_1F88EEE04E890908FB52AE9442E35CE3,0,,0.2
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Shields/_Design/Balance/ShieldAug_Unique_BalanceData.ShieldAug_Unique_BalanceData,Ward,RechargeRate_27_8A47A06C426C0A244C25068F9B363075,0,,0.5
