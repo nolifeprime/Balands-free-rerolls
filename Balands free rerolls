@@ -1285,11 +1285,11 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/Gamepla
 # Fearmonger - Reduce Damage to 0.425 from 0.55.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/BloodyHarvest/Gear/_Design/Balance/DataTable_Weapon_BloodyHarvest.DataTable_Weapon_BloodyHarvest,SG_Fearmonger,DamageScale_2_6249E51D41B75899C0DEDD8B5EFE89ED,0,,0.425
 
-# Guardian 4N631 - Reduce Damage to 0.7 from 1, reduce Distance Damage Bonus from 500% to 120%, increase Projectile Speed by 75%, make description more accurate.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/DataTable_WeaponBalance_VaultCard.DataTable_WeaponBalance_VaultCard,Guardian,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.7
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/DataTable_WeaponBalance_VaultCard.DataTable_WeaponBalance_VaultCard,Guardian,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1.2
+# Guardian 4N631 - increase Projectile Speed by 75%, make description more accurate.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/DataTable_WeaponBalance_VaultCard.DataTable_WeaponBalance_VaultCard,Guardian,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/DataTable_WeaponBalance_VaultCard.DataTable_WeaponBalance_VaultCard,Guardian,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,5
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/LightProjectile_Guardian.Default__LightProjectile_Guardian_C,Speed,0,,2100.0
-SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/UIStat_Desc_Guardian.UIStat_Desc_Guardian,Text.string,0,,Most types of [skill]damage[/skill] are increased up to [bold]120%[/bold] based on distance from the target while this weapon is active.
+SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/UIStat_Desc_Guardian.UIStat_Desc_Guardian,Text.string,0,,Most types of [skill]damage[/skill] are increased up to [bold]500%[/bold] based on distance from the target while this weapon is active.
 
 # Heart Breaker - Reduce Damage to 1.1 from 1.3, reduce Lifesteal to 1.5% from 5%, add 25% Critical Hit Damage.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SG_HeartBreaker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.1
