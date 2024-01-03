@@ -3092,7 +3092,9 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTab
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/LowHealth_Executor/CDM_EG_Generic_LowHealthExecutor.CDM_EG_Generic_LowHealthExecutor:DefenderCondition_GbxCondition_IsLowOnHealth,LowHealth,0,,0.5
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/LowHealth_Executor/UIStat_EG_Generic_LowHealthExecutor.UIStat_EG_Generic_LowHealthExecutor,FormatText.string,0,,[endgame]While enemies are below 50% Health, gain $VALUE$ increased Weapon Damage.[/endgame]
 
-# Killstack - Make it ScaleSimple.
+# Killstack - Reduce Damage and Reload Speed to 3% from 12.5%, make it ScaleSimple.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,KillsStackReloadDmg,Damage_7_39142BF947B2CBE02701DBA97A4D507F,0,,1.03
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/DataTable_Raid1_EndGame.DataTable_Raid1_EndGame,KillsStackReloadDmg,Custom_A_21_F62C55A14374986C5D004E94DD277B3D,0,,0.97
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/StatusEffect_Generic_KillStackReloadDamage.StatusEffect_Generic_KillStackReloadDamage,AttributeEffects.AttributeEffects[0].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/StatusEffect_Generic_KillStackReloadDamage.StatusEffect_Generic_KillStackReloadDamage,AttributeEffects.AttributeEffects[1].ModifierType,0,,ScaleSimple
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Raid1/Gear/Anointed/Generic/KillStack_ReloadDamage/StatusEffect_Generic_KillStackReloadDamage.StatusEffect_Generic_KillStackReloadDamage,AttributeEffects.AttributeEffects[2].ModifierType,0,,ScaleSimple
