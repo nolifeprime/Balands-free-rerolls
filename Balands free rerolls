@@ -1535,8 +1535,8 @@ SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/Ixora2/Gear/Weapons/_Unique
 # Monocle - Set Damage to 0.5.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/Gear/Weapons/_Shared/_Design/GameplayAttributes/_Unique/DataTable_WeaponBalance_Unique_JAK.DataTable_WeaponBalance_Unique_JAK,SR_Monocle,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.5
 
-# Skullmasher - Increased Damage to 1 from 0.5, reduce Accuracy Spread to 3.5 from 2.5.
-SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,SR_Skullmasher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1
+# Skullmasher - Reduce Damage to 0.4 from 0.5, reduce Accuracy Spread to 3.5 from 2.5.
+SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,SR_Skullmasher,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,0.4
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Hibiscus/Gear/Weapon/DataTable_WeaponBalance_Hibiscus.DataTable_WeaponBalance_Hibiscus,SR_Skullmasher,Custom_B_11_6D4E8C1140CC269ED614BC958ECB0E22,0,,3.5
 
 # Unseen Threat - Reduce Damage to 1.2 from 1.75, reduce Ricochet Damage to 0.33 from 1.5.
