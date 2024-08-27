@@ -1229,6 +1229,8 @@ SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Data
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/DataTable_WeaponBalance_VaultCard.DataTable_WeaponBalance_VaultCard,Guardian,Custom_A_10_6BE78EF448AB3F6F228BC7B266814C86,0,,1.2
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/LightProjectile_Guardian.Default__LightProjectile_Guardian_C,Speed,0,,2100.0
 SparkLevelPatchEntry,(1,1,0,MatchAll),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/UIStat_Desc_Guardian.UIStat_Desc_Guardian,Text.string,0,,Most types of [skill]damage[/skill] are increased up to [bold]120%[/bold] based on distance from the target while this weapon is active.
+# Guardian 4N631 always applies it's full damage bonus, regardless of distance to enemy
+SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard/Gear/Weapons/Unique/Guardian/CDM_Guardian.CDM_Guardian,bModifyValueBasedOnDistance,0,,false
 
 # Heart Breaker - Reduce Damage to 1.1 from 1.3, reduce Lifesteal to 1.5% from 5%, add 25% Critical Hit Damage.
 SparkLevelPatchEntry,(1,2,0,MatchAll),/Game/PatchDLC/Dandelion/Gear/Weapon/DataTable_WeaponBalance_Dandelion.DataTable_WeaponBalance_Dandelion,SG_HeartBreaker,DamageScale_2_4F6EF14648BA8F2AE9217DAFEA60EE53,0,,1.1
@@ -7866,3 +7868,19 @@ SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/Weapons/Unique/Troublesh
 
 # Pyroburst
 SparkPatchEntry,(1,1,0,),/Game/PatchDLC/VaultCard2/Gear/GrenadeMods/Unique/Pyroburst/UIStat_RedText_Pyroburst.UIStat_RedText_Pyroburst,Text,0,,[Flavor]KEKW[/Flavor] <p><p>    [nameplate_enemy_slight][italic](After impact, bounces 5 times while spawning homing elemental orbs.)[/italic][/nameplate_enemy_slight]
+
+# Table_SDU_Backpack
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv1,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv2,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv3,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv4,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv5,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv6,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv7,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv8,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv9,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv10,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv11,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv12,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+SparkPatchEntry,(1,2,0,),/Game/Pickups/SDU/Table_SDU_Backpack.Table_SDU_Backpack,Lv13,AttributeModifyInfo,0,,(AttributeToModify=/Game/GameData/Attributes/Character/Att_PlayerInventoryMax.Att_PlayerInventoryMax,ModifierType=PreAdd,ModifierValue=(BaseValueConstant=8.0)
+
